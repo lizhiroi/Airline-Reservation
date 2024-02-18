@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRS'R'US</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon font (Main Menu) -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    /> -->
+
+    <!-- bootstrap icon font (SNS) -->
+    <!-- <link
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-dark p-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1 class="display-4 text-white">AIRS'R'US</h1>
+          </div>
+          <div class="d-flex align-items-center">
+            <a
+              class="btn btn-outline-secondary text-white border-dark"
+              href="javascript:void(0);"
+              id="searchButton"
+              data-toggle="collapse"
+              data-target="#searchInput"
+              aria-expanded="false"
+              aria-controls="searchInput"
+              >Search</a
+            >
+            <div class="collapse form-inline ml-2" id="searchInput">
+              <input
+                class="form-control shadow-none mr-2"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+            <div>
+              <a
+                class="btn btn-outline-secondary text-white border-dark"
+                href="/sign-in"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-start mt-4">
+        <div class="col-md-6">
+          <div class="row align-items-center">
+            <div class="col-md-1">
+              <h2>
+                <span class="rounded-circle bg-dark text-white p-2 mr-2"
+                  >3</span
+                >
+              </h2>
+            </div>
+            <div class="col-md-11">
+              <h2>Contact information</h2>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+              <p>
+                Your contact information will be stored in our system for faster
+                checkout, and we'll use it to send you your Aeroplan card.
+              </p>
+              <form>
+                <div class="mb-3">
+                  <label for="address" class="form-label">Address:</label>
+                  <input
+                    type="text"
+                    class="form-control shadow-none"
+                    id="address"
+                    name="address"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="unit" class="form-label">Unit/Apt:</label>
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        id="unit"
+                        name="unit"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="town" class="form-label">Town/City:</label>
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        id="town"
+                        name="town"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="postcode" class="form-label"
+                        >Post Code:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        id="postcode"
+                        name="postcode"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="country" class="form-label">Province:</label>
+                  <input
+                    type="text"
+                    class="form-control shadow-none"
+                    id="country"
+                    name="country"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="province" class="form-label">Country:</label>
+                  <input
+                    type="text"
+                    class="form-control shadow-none"
+                    id="province"
+                    name="province"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number:</label>
+                  <input
+                    type="tel"
+                    class="form-control shadow-none"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phoneType" class="form-label">Phone Type:</label>
+                  <select
+                    class="form-select shadow-none"
+                    id="phoneType"
+                    name="phoneType"
+                  >
+                    <option value="mobile">Mobile</option>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+                  </select>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input shadow-none"
+                    id="privacyPolicy"
+                    name="privacyPolicy"
+                    required
+                  />
+                  <label class="form-check-label" for="privacyPolicy">
+                    Yes, I have read the AIRS'R'US Privacy Policy and consent to
+                    it. Minors must have a parent or guardian consent on their
+                    behalf.
+                  </label>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="submit"
+                    class="btn btn-primary bg-dark text-white border-dark"
+                  >
+                    <a
+                      href="register4.html"
+                      class="btn btn-primary bg-dark text-white border-dark"
+                      >Continue</a
+                    >
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+    padding-top: 3rem;   
+    color: rgb(var(--bs-tertiary-color-rgb));
+    background-image: url('../image/background.jpg');
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #111F44;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #111F44;
+  }
+
+
+    
+  }
